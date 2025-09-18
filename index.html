@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Armenia Nexus</title>
+  <style>
+    body { margin:0; font-family: Arial, sans-serif; line-height:1.6; color:#222; }
+    header { background:#fff; padding:15px 40px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+    header nav a { margin:0 10px; text-decoration:none; color:#333; font-weight:bold; }
+    .hero {
+      background: url("banner.JPG") no-repeat center/cover;
+      height: 90vh; display:flex; align-items:center; justify-content:center; color:white; text-align:center; position:relative;
+    }
+    .hero::after {content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5);}
+    .hero-content {position:relative; z-index:1; max-width:700px;}
+    .hero h1 {font-size:3em; margin-bottom:20px;}
+    .btn {padding:12px 24px; margin:5px; border:none; cursor:pointer; font-size:1em; border-radius:5px;}
+    .btn-primary {background:#D90012; color:white;}
+    .btn-secondary {background:#0033A0; color:white;}
+    section {padding:70px 40px;}
+    section h2 {text-align:center; margin-bottom:30px; font-size:2em;}
+    .about {display:flex; flex-wrap:wrap; gap:30px; align-items:center; max-width:1100px; margin:auto;}
+    .about img {width:100%; max-width:450px; border-radius:10px;}
+    .about-text {flex:1;}
+    .cards {display:grid; grid-template-columns:repeat(auto-fit,minmax(280px,1fr)); gap:20px; max-width:1100px; margin:auto;}
+    .card {background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,0.1);}
+    .card img {width:100%; height:200px; object-fit:cover;}
+    .card-content {padding:15px;}
+    .values {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px; max-width:1000px; margin:auto; text-align:center;}
+    .values div {background:#f9f9f9; padding:20px; border-radius:10px; box-shadow:0 1px 4px rgba(0,0,0,0.1);}
+    .gallery {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:10px; max-width:1100px; margin:auto;}
+    .gallery img {width:100%; height:200px; object-fit:cover; border-radius:8px;}
+    .cta {background:url("banner2.jpg") no-repeat center/cover; position:relative; color:white; text-align:center;}
+    .cta::after {content:""; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6);}
+    .cta-content {position:relative; z-index:1;}
+    .contact-form {max-width:600px; margin:auto;}
+    .contact-form input, .contact-form textarea {width:100%; padding:12px; margin:10px 0; border:1px solid #ccc; border-radius:6px;}
+    .contact-form button {background:#D90012; color:#fff; border:none; padding:12px 20px; cursor:pointer; border-radius:6px;}
+    footer {background:#1a1a1a; color:#ccc; text-align:center; padding:25px; position:relative;}
+    footer::after {content:""; display:block; height:6px; background:linear-gradient(to right,#D90012,#0033A0,#F2A800); position:absolute; bottom:0; left:0; right:0;}
+    @media(max-width:768px){
+      .about {flex-direction:column;}
+      .hero h1 {font-size:2em;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo"><strong>The Armenia Nexus</strong></div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Events</a>
+    <a href="#">News</a>
+    <a href="#">Donate</a>
+    <a href="#">Join</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="hero-content">
+    <h1>Together for Armenia’s Future</h1>
+    <p>Led by Gurgen Simonyan, building a strong and united Armenia.</p>
+    <button class="btn btn-primary">Join Us</button>
+    <button class="btn btn-secondary">Donate</button>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about">
+  <img src="about.jpg" alt="Leader portrait">
+  <div class="about-text">
+    <h2>About Our Movement</h2>
+    <p>The Armenia Nexus is a new political party dedicated to transparency, unity, and progress. Founded by Gurgen Simonyan, our mission is to build a modern and democratic Armenia rooted in national values.</p>
+  </div>
+</section>
+
+<!-- Mission & Values -->
+<section>
+  <h2>Our Mission & Values</h2>
+  <div class="values">
+    <div><h3>Transparency</h3><p>Open and honest governance for the people.</p></div>
+    <div><h3>Unity</h3><p>Bringing citizens together across all regions and communities.</p></div>
+    <div><h3>Progress</h3><p>Investing in education, technology, and sustainable growth.</p></div>
+  </div>
+</section>
+
+<!-- Events -->
+<section>
+  <h2>Upcoming Events</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=800&q=80" alt="Event">
+      <div class="card-content">
+        <h3>Community Gathering</h3>
+        <p>Join us for a discussion about Armenia’s future and how you can help.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1518600506278-4e8ef466b810?auto=format&fit=crop&w=800&q=80" alt="Event">
+      <div class="card-content">
+        <h3>Youth Forum</h3>
+        <p>Engaging the next generation of Armenian leaders and innovators.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- News -->
+<section>
+  <h2>Latest News</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="News1.jpg" alt="News">
+      <div class="card-content">
+        <h3>Press Release</h3>
+        <p>Gurgen Simonyan announces key policies for economic growth and unity.</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="news2.jpg" alt="News">
+      <div class="card-content">
+        <h3>In the Media</h3>
+        <p>Coverage of our party launch and mission in the Armenian press.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Gallery -->
+<section>
+  <h2>Photo Gallery</h2>
+  <div class="gallery">
+    <img src="https://img.freepik.com/free-photo/people-posing-together-registration-day_23-2149096744.jpg" alt="Gallery">
+    <img src="https://media.istockphoto.com/id/1785548065/photo/confident-financial-advisor-talking-with-caller-in-nyc.jpg?s=612x612&w=0&k=20&c=yjodHl2nBULjd8e4E7tvbadu1-Gl3-1-KTfMCJfNPU4=" alt="Gallery">
+    <img src="https://images.pexels.com/photos/356844/pexels-photo-356844.jpeg?cs=srgb&dl=pexels-pixabay-356844.jpg&fm=jpg" alt="Gallery">
+    <img src="https://www.dlrgroup.com/media/55_12061_00_N10_weblg-2140x1424.jpg" alt="Gallery">
+  </div>
+</section>
+
+<!-- Call to Action -->
+<section class="cta">
+  <div class="cta-content">
+    <h2>Be Part of the Change</h2>
+    <p>Support the Armenia Nexus today and help us build a stronger nation.</p>
+    <button class="btn btn-primary">Join Us</button>
+    <button class="btn btn-secondary">Donate</button>
+  </div>
+</section>
+
+<!-- Merchandise -->
+<section>
+  <h2>Merchandise</h2>
+  <div class="cards">
+    <div class="card">
+      <img src="tshirt.jpg" alt="T-shirt">
+      <div class="card-content">
+        <h3>Party T-Shirt</h3>
+      </div>
+    </div>
+    <div class="card">
+      <img src="mug.jpg" alt="Mug">
+      <div class="card-content">
+        <h3>Coffee Mug</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section>
+  <h2>Contact Us</h2>
+  <div class="contact-form">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea rows="5" placeholder="Your Message"></textarea>
+    <button>Send Message</button>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 The Armenia Nexus | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
